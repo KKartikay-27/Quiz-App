@@ -8,7 +8,8 @@ function nextQuestion() {
     if (currentQuestionIndex == questions.length) {
         setTimeout(() => {
             localStorage.setItem("score", score);
-            localStorage.setItem("total", ((questions.length) * 10));
+            localStorage.setItem("totalQ", (questions.length));
+            localStorage.setItem("total", (questions.length));
             window.location.href = "end.html";
         }, 1000);
         return;
@@ -20,6 +21,9 @@ function nextQuestion() {
 }
 
 function renderQuestion(question) {
+
+    document.querySelector(".qNum").innerText = currentQuestionIndex + 1;
+
     document.querySelector(".question").innerText = question.question;
     
     document.querySelector(".opt:nth-child(1) .opt-txt").innerText = question.choice1;

@@ -71,6 +71,7 @@ a {
 
 .pro-txt {
     text-align: left;
+    display: flex;
 }
 
 .progress {
