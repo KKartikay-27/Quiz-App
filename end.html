@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <h1>Quiz Completed</h1>
+            <h2 style="color: rgb(75, 136, 194);">Score : <span class="score"></span> / <span class="total"></span></h2>
+            <div class="low">
+                <a href="/game.html" class="btn retry-btn">Retry</a>
+                <a href="/index.html" class="btn home-btn">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".score").innerText = localStorage.getItem("score");
+        document.querySelector(".total").innerText = localStorage.getItem("total");
+    </script>
+</body>
+</html>

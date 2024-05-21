@@ -37,6 +37,7 @@ h1 {
     font-family: 'Arial Nova', 'Arial', sans-serif;
     font-weight: bolder;
     font-size: 3.5rem;
+    margin: 2rem;
 }
 
 a {
@@ -52,7 +53,7 @@ a {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0.4rem 0.4rem 0.4rem 0 rgba(161, 191, 234, 0.308);
+    box-shadow: 0.4rem 0.4rem 0.4rem 0 rgba(127, 170, 230, 0.61);
 }
 
 .top {
@@ -104,6 +105,13 @@ a {
     height: 35%;
     width: 180%;
     max-width: 120%;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(76, 154, 225);
+    transition: 0.3s;
 }
 
 .options {
@@ -164,4 +172,13 @@ a {
 
 .incorrect {
     background-color: red;
+}
+
+.low{
+    display: flex;
+}
+h2{
+    display: flex;
+    margin: 2rem;
+    gap: 0.5rem;
 }
